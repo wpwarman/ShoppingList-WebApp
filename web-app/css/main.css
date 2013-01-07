@@ -1,0 +1,194 @@
+/* FONT STACK */
+body, input, select, textarea {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* BASE LAYOUT */
+
+html {
+	background-color: #ddd;
+	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
+	background-image: linear-gradient(top, #aaa, #ddd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
+	background-repeat: no-repeat;
+	height: 100%;
+	/* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html.no-cssgradients {
+	background-color: #aaa;
+}
+
+html * {
+	margin: 0;
+}
+
+body {
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 500px;
+	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+	align:center;
+}
+
+a {
+	text-decoration:none;
+	color:black;
+}
+
+div.flashMessage
+{
+	color: darkgreen;
+	padding-bottom:15px;
+	text-align:center;
+	font-weight:bold;
+
+}
+
+div.footer 
+{
+	font-size: .70em;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:40px;
+	padding-right:40px;
+	text-align:center;
+}
+
+
+/* NAVIGATION */
+table.navigationLinks {
+	width:500px;
+	border-spacing:2px;
+	background: #008000;
+}
+table.navigationLinks td {
+	width:33%;
+	text-align: center;
+	background: #66ff33;
+}
+
+
+/* PRODUCT LIST */
+table.productList {
+	width:500px;
+	border-top: 1px solid #999999;
+	border-spacing:0px;
+}
+table.productList td, th {
+	width:50%;
+	text-align: center;
+	border-bottom:1px solid #999999;
+}
+
+table.productList thead {
+	background-color:pink;
+}
+
+
+/* FORMS */
+.fieldlabel {
+	width:135px;
+	display:inline-block;
+}
+
+div.formFieldArea {
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left:20px;
+}
+
+div.formButtonArea {
+	padding-top:15px;
+	padding-bottom: 15px;
+	padding-right:20px;
+	text-align:right;
+}
+
+
+/* SHOW VIEWS */
+ul.showProductList{
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+ul.showProductList li {
+	list-style-type:none; 
+}
+
+span.fieldlabel {
+	font-weight:bold;
+}
+
+input[type='submit'] {
+	border:1px solid green;
+	background-color:#dddddd;
+	color:#008000;
+	font-weight:bold;
+}
+
+
+/* PAGE SPECIFIC CSS */
+div.indexPage h1, h2{
+	text-align:center;	
+	padding-bottom:5px;
+	padding-right:5px;
+	padding-left:5px;
+	padding-top:5px;
+}
+
+div.indexPage h1 {
+	font-size: 1.8em;
+}
+
+div.indexPage h2 {
+	font-size: 1.2em;
+	padding-top:10px;
+}
+
+div.indexPage p {
+	text-align:left;
+	font-size: 1.0em;
+	padding-bottom:15px;
+	padding-right:50px;
+	padding-left:50px;
+	padding-top:5px;
+}
+
+div.listPage h1 {
+	font-size: 1.8em;
+	padding:10px;
+	text-align:center;
+}
+
+div.listPage .odd
+{
+	background-color:#dddddd;
+} 
+
+div.createPage h1 {
+	font-size: 1.8em;
+	padding:10px;
+	text-align:center;
+}
+
+div.showPage h1 {
+	font-size: 1.8em;
+	padding:10px;
+	text-align:center;
+}
+
+div.editPage h1 {
+	font-size: 1.8em;
+	padding:10px;
+	text-align:center;
+	
+}
